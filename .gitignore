@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE and Editor configs
+.vscode/
+.idea/
+
+# Large model weights (keep code clean, commit weights or host/link as specified in Section 5.5)
+*.pth
+*.pt
+*.onnx
+
+# Temporary logs / runs
+*.log
+runs/
+.pytest_cache/
