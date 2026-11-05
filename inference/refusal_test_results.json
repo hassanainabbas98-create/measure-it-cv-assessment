@@ -1,0 +1,69 @@
+[
+  {
+    "case_id": "CASE_0_NORMAL",
+    "description": "Standard planar scene with both target and reference present",
+    "expected_status": "SUCCESS",
+    "observed_status": "SUCCESS",
+    "passed": true,
+    "details": {
+      "status": "SUCCESS",
+      "image": "PXL_20261104_161823310.jpg",
+      "undistort_applied": false,
+      "measurements": {
+        "target_width_mm": 117.45,
+        "target_height_mm": 82.5,
+        "ground_truth_width_mm": 117.0,
+        "ground_truth_height_mm": 82.0,
+        "error_width_mm": 0.45,
+        "error_height_mm": 0.5,
+        "scale_mm_per_px": 0.17308
+      },
+      "confidences": {
+        "target_confidence": 0.9658,
+        "reference_confidence": 0.997
+      },
+      "pixel_geometry": {
+        "target_width_px": 678.6,
+        "target_height_px": 476.6,
+        "reference_width_px": 496.6,
+        "reference_height_px": 312.2
+      }
+    }
+  },
+  {
+    "case_id": "CASE_1_TARGET_NOT_FOUND",
+    "description": "Target charger box absent or obliterated from scene",
+    "expected_status": "REFUSED",
+    "observed_status": "REFUSED",
+    "refusal_code": "TARGET_NOT_FOUND",
+    "passed": true,
+    "message": "REFUSED: Target object (charger_box) not found or confidence (0.000) below threshold (0.8)"
+  },
+  {
+    "case_id": "CASE_2_REFERENCE_NOT_FOUND",
+    "description": "Reference CNIC card absent or obliterated from scene",
+    "expected_status": "REFUSED",
+    "observed_status": "REFUSED",
+    "refusal_code": "REFERENCE_NOT_FOUND",
+    "passed": true,
+    "message": "REFUSED: Reference object (cnic_card) not found or confidence (0.700) below threshold (0.8)"
+  },
+  {
+    "case_id": "CASE_3_BOUNDARY_CLIPPING",
+    "description": "Object or reference clipped at frame edge / partial visibility",
+    "expected_status": "REFUSED",
+    "observed_status": "REFUSED",
+    "refusal_code": "TARGET_NOT_FOUND",
+    "passed": true,
+    "message": "REFUSED: Target object (charger_box) not found or confidence (0.793) below threshold (0.8)"
+  },
+  {
+    "case_id": "CASE_4_SEVERE_TILT",
+    "description": "Camera tilted at 60 degrees relative to surface normal",
+    "expected_status": "REFUSED",
+    "observed_status": "REFUSED",
+    "refusal_code": "ASPECT_RATIO_ANOMALY",
+    "passed": true,
+    "message": "REFUSED: Reference card aspect ratio error (31.6%) exceeds tolerance (10.0%). Severe perspective tilt or occlusion detected."
+  }
+]

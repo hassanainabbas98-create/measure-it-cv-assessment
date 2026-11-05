@@ -23,6 +23,10 @@ Desktop.ini
 *.pt
 *.onnx
 
+# Raw uncalibrated images (undistorted versions are tracked)
+dataset/images_raw/
+measurement/tilt_images/
+
 # Temporary logs / runs
 *.log
 runs/

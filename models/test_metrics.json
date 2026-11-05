@@ -1,0 +1,148 @@
+{
+  "assessment_item": "Item 3 - Segmentation Model Evaluation",
+  "model_architecture": "torchvision.models.detection.maskrcnn_resnet50_fpn",
+  "weights_file": "models/weights/best_model.pth",
+  "weights_sha256": "9eb61ae5a662ba52594af86c92e7d8c2cec0a3617b970b323695c63d78673ecb",
+  "test_instances_count": 10,
+  "metrics": {
+    "mean_mask_iou": 0.9526,
+    "charger_box_mask_iou": 0.9543,
+    "cnic_card_mask_iou": 0.951,
+    "mAP_at_0_5": 1.0,
+    "mAP_at_0_5_0_95": 0.955,
+    "precision_at_0_5": 1.0,
+    "recall_at_0_5": 1.0
+  },
+  "per_instance_results": [
+    {
+      "filename": "PXL_20261104_161823310.jpg",
+      "ious": {
+        "charger_box": {
+          "iou": 0.9539,
+          "score": 0.9658
+        },
+        "cnic_card": {
+          "iou": 0.9789,
+          "score": 0.997
+        }
+      }
+    },
+    {
+      "filename": "PXL_20261104_161858456.jpg",
+      "ious": {
+        "charger_box": {
+          "iou": 0.9734,
+          "score": 0.9818
+        },
+        "cnic_card": {
+          "iou": 0.9443,
+          "score": 0.9981
+        }
+      }
+    },
+    {
+      "filename": "PXL_20261104_162215251.jpg",
+      "ious": {
+        "charger_box": {
+          "iou": 0.9572,
+          "score": 0.9712
+        },
+        "cnic_card": {
+          "iou": 0.9406,
+          "score": 0.9947
+        }
+      }
+    },
+    {
+      "filename": "PXL_20261104_164214170.jpg",
+      "ious": {
+        "charger_box": {
+          "iou": 0.9437,
+          "score": 0.9964
+        },
+        "cnic_card": {
+          "iou": 0.9591,
+          "score": 0.9947
+        }
+      }
+    },
+    {
+      "filename": "PXL_20261104_165843699.jpg",
+      "ious": {
+        "charger_box": {
+          "iou": 0.9637,
+          "score": 0.9965
+        },
+        "cnic_card": {
+          "iou": 0.9496,
+          "score": 0.97
+        }
+      }
+    },
+    {
+      "filename": "PXL_20261104_165952524.jpg",
+      "ious": {
+        "charger_box": {
+          "iou": 0.9551,
+          "score": 0.9852
+        },
+        "cnic_card": {
+          "iou": 0.9582,
+          "score": 0.9659
+        }
+      }
+    },
+    {
+      "filename": "PXL_20261104_170117646.jpg",
+      "ious": {
+        "charger_box": {
+          "iou": 0.9565,
+          "score": 0.9879
+        },
+        "cnic_card": {
+          "iou": 0.9509,
+          "score": 0.9736
+        }
+      }
+    },
+    {
+      "filename": "PXL_20261104_170609685.jpg",
+      "ious": {
+        "charger_box": {
+          "iou": 0.9368,
+          "score": 0.9541
+        },
+        "cnic_card": {
+          "iou": 0.9472,
+          "score": 0.9942
+        }
+      }
+    },
+    {
+      "filename": "PXL_20261104_170622640.jpg",
+      "ious": {
+        "charger_box": {
+          "iou": 0.9614,
+          "score": 0.9743
+        },
+        "cnic_card": {
+          "iou": 0.9424,
+          "score": 0.971
+        }
+      }
+    },
+    {
+      "filename": "PXL_20261104_170839497.jpg",
+      "ious": {
+        "charger_box": {
+          "iou": 0.9415,
+          "score": 0.9958
+        },
+        "cnic_card": {
+          "iou": 0.9384,
+          "score": 0.9829
+        }
+      }
+    }
+  ]
+}
